@@ -1,0 +1,167 @@
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #E8EAE6;
+}
+:root{
+    --text-color: rgb(90, 88, 88);
+    --heading-color: rgb(79, 76, 76);
+    --invention-heading: rgb(29, 123, 205);
+}
+
+figcaption{
+    text-align: center;
+}
+
+#img-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title1{
+   text-align: center;
+   color: var(--invention-heading); 
+}
+#title2{
+    text-align: center; 
+   color: var(--heading-color); 
+
+}
+.bio-para{
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.invention-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-heading {
+  color: var(--invention-heading);
+}
+ul{
+    margin: 0;
+    padding: 5px;
+}
+hr{
+    color: var(--text-color);
+}
+.list-text {
+  color: rgb(90, 88, 88);
+  text-align: justify;
+  margin: 0 10px;
+}
+
+.list-imageDiv .list-img {
+  height: 300px;
+  width: 400px;
+  border-radius: 10%;
+  margin-top: 15px;
+}
+
+.Tesla-quotes{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.Read-more{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media (max-width:1300px) {
+    .invention-list{
+        display: block;
+        margin: 0;
+    }
+    .list-imageDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .bio-para{
+        padding: 5px;
+    } 
+    #image{
+        height: 400px;
+        width: 300px;
+    }
+    #title1{
+        font-size: 25px;
+    }  
+    #title2{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width:900px) {
+    .invention-list{
+        display: block;
+        margin: 0;
+    }
+    .list-imageDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .bio-para{
+        padding: 5px;
+    } 
+    #image{
+        height: 300px;
+        width: 280px;
+    }
+    #title1{
+        font-size: 25px;
+    }  
+    #title2{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .list-imageDiv .list-img {
+        width: 270px;
+        height: 220px;
+    }
+    .list-group{
+        margin: 0;
+        padding: 0;
+    }
+    .list-heading{
+        text-align: center;
+    }
+    #image{
+        height: 280px;
+        width: 250px;
+    }
+    #title1{
+        font-size: 20px;
+    }  
+    #title2{
+        font-size: 15px;
+    }
+}
